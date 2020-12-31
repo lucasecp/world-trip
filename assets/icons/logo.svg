@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="60" viewBox="0 0 100 60">
+  <defs>
+    <clipPath id="clip-logo">
+      <rect width="100" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="logo" clip-path="url(#clip-logo)">
+    <rect width="100" height="60" fill="#fff"/>
+    <text id="w" transform="translate(0 43)" fill="#048abf" font-size="63" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">w</tspan></text>
+    <g id="aviao" transform="translate(47.979 3.6)">
+      <g id="Group_2" data-name="Group 2" transform="translate(0.021)">
+        <g id="Group_1" data-name="Group 1">
+          <path id="Path_1" data-name="Path 1" d="M48.239,26.985l-19.21-15.1v-6.7a6.106,6.106,0,0,0-.887-3.117l-.437-.652A3.217,3.217,0,0,0,24.885,0a3.207,3.207,0,0,0-2.8,1.38l-.483.725a6.073,6.073,0,0,0-.864,3.081v6.7l-19.2,15.1A3.665,3.665,0,0,0,.021,29.861V31.77a.807.807,0,0,0,.539.714,1.273,1.273,0,0,0,1.057-.029l19.527-9.838c.193,2.465.454,4.523.773,7.027l.329,2.566-7.254,3.768a.79.79,0,0,0-.466.681v1.629a.767.767,0,0,0,.387.635,1.248,1.248,0,0,0,.872.161l9.1-1.592,9.1,1.592a1.3,1.3,0,0,0,.224.02,1.223,1.223,0,0,0,.649-.179.772.772,0,0,0,.387-.637V36.658a.784.784,0,0,0-.466-.679l-7.254-3.763.329-2.574c.319-2.5.58-4.557.773-7.022l19.527,9.835a1.275,1.275,0,0,0,1.055.029.807.807,0,0,0,.541-.714V29.861A3.659,3.659,0,0,0,48.239,26.985Z" transform="translate(-0.021)" fill="#048abf"/>
+        </g>
+      </g>
+    </g>
+    <text id="world_trip" data-name="world trip" transform="translate(25 54)" font-size="10" font-family="NirmalaUI-Bold, Nirmala UI" font-weight="700"><tspan x="0" y="0">world trip</tspan></text>
+  </g>
+</svg>

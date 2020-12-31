@@ -1,0 +1,34 @@
+
+.main-contact button{
+    background:#048ABF;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px ;
+    width: 300px;
+    margin: 10px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white
+}
+.main-contact button:hover{
+    background: #045c80
+}
+.main-contact p{
+    line-height: 25px;
+}
+.phone-contact{
+    display: block;
+    width: 150px; 
+    margin: 0 auto;
+    color: #048ABF;
+}
+
+
+
+@media (max-width: 700px){
+    .main-contact button{
+        width: calc(100% - 30px);
+    }
+}
