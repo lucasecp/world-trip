@@ -1,0 +1,71 @@
+.destino-banner{
+    height:500px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center;
+}
+
+
+
+.destino-dublin-banner{
+    background: url('../assets/img/destino/Web 1920 – 16.jpg');
+   
+}
+.destino-inglaterra-banner{
+    background: url('../assets/img/destino/inglaterra.jpg');
+    background-position: bottom;
+   
+}
+
+.destino-nz-banner{
+    background: url('../assets/img/destino/auckland.jpg');
+    background-position: bottom;
+}
+.destino-eua-banner{
+    background: url('../assets/img/destino/eua.jpg');
+    background-position: center;
+}
+.destino-canada-banner{
+    background: url('../assets/img/destino/toronto1.jpg');
+    background-position: bottom;
+}
+.destino-australia-banner{
+    background: url('../assets/img/destino/australia2.jpg');
+    background-position: center;
+}
+
+
+
+.background{
+    background: rgba(0,0,0,0.2);
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.destino-banner h1{
+    text-align: center;
+    color: rgb(248, 247, 247);
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.destino-banner span{
+    color:  #048ABF
+}
+.main-pais{
+    font-size: 20px;
+    line-height: 30px;
+}
+.btn-main-state{
+    background:#048ABF;
+    font-size: 15px;
+    padding: 5px 70px;
+    border-radius : 30px;
+    color: white;
+}
+@media(max-width: 500px ){
+    .main-pais p{
+        font-size: 18px
+    }
+}
+

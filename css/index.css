@@ -4,21 +4,22 @@
    z-index: 99;
  
 }
+h2,h1{
+    font-size: 28px
+}
 
 .list-item:nth-child(2) a,.list-item:nth-child(3) a{
     color: #dfd9d9
 }
 .btn-active{
     color: white;
-    background: #048ABF;
+    background:#048ABF;
     border-radius: 30px;
     padding:10px 30px !important;
 
     
 }
-.btn-active:hover{
-    background: rgba(13, 144, 214, 0.96)
-}
+
 .nav-2 .header-responsive{
    height:0;
    width:0;
@@ -83,11 +84,9 @@
         max-width: 100vw;
         margin: 0 auto;
         margin-top: 50px;
-        background:#ec273b
+        background:#048ABF;
+        border: solid white 2px
 
-    }
-    .btn-active:hover{
-        background: #b6051a
     }
     .nav-2-active{
        left: 0;
@@ -132,18 +131,26 @@
 
 }
 @media (max-width: 500px){
-    h1{
-        font-size: 28px
-    }
+ 
     .contact + .contact{
         margin-left:10px !important
     }
+  
 
 }
 @media(max-width: 767px){
     .btn-tab{
         bottom: 0 !important;
         margin: 0 auto;
+    }
+    th ,td{
+        font-size: 15px !important;
+       }
+    h1{
+        font-size: 24px
+    }
+    h2{
+        font-size: 24px
     }
 }
 .list-item{
@@ -218,27 +225,49 @@
 
 .img-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: relative;
-    
+    justify-content: center;
 }
 .img{
   position: relative;
   top:0;
   height:0;
-  opacity: 0;
   width:0;
+  transition: .5s ease ;
+  opacity: 0;
  
 }
+
 .img-slide-active{
     height:auto;
     width: auto;
+    transition: .5s ease ;
     opacity: 1;
-    transition: .4s ;
+
    
 
 }
-
+.prev , .next{
+    position : absolute;
+    top: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 70px;
+    width:30px;
+    font-size: 50px;
+    cursor: pointer;
+    border: none;
+    margin-left: 20px;
+    
+}
+.prev:hover , .next:hover{
+   background: rgba(0, 0, 0, 0.8);
+}
+.next{
+    margin-right: 20px;
+    right: 0;
+}
 
 .controls {
    display: flex;
@@ -264,7 +293,31 @@
     border-radius: 50%;
     padding:5px;
 }
-
+.progress{
+    position: absolute;
+    bottom: 1px;
+    width:100%;
+    height:2px;
+    animation: progress-out 5s forwards linear;
+}
+.progress-active{
+    background: white;
+    animation: progress 5s forwards linear;
+}
+@keyframes progress{
+    from{
+     left: -100%;
+    }to{
+        left:0
+    }
+}
+@keyframes progress-out{
+    from{
+     left: -100%;
+    }to{
+        left:0
+    }
+}
 div.loading{
     height:100%;
     width: 100%;
@@ -349,7 +402,7 @@ section .main-item{
    font-size: 20px;
    padding:15px 70px ;
    border-radius: 30px;
-   background:#ec273b;
+   background:#048ABF;
    color: white;
 }
 .btn-tab{
@@ -372,6 +425,7 @@ td{
 }
 td,th{
     padding: 15px !important;
+    font-size: 15px;
 }
 .section-tab nav{
     display: flex;
@@ -402,7 +456,7 @@ section .item-active{
 }
 .news-letter h2{
     color: white;
-    font-size: 28px
+    font-size: 24px
 }
 
 .news-letter form a{
@@ -415,7 +469,7 @@ section .item-active{
 }
 .section-contact h2{
     color: rgb(66, 66, 66);
-    font-size: 28px;
+    font-size: 24px;
 }
 .footer ul a{
     color: white;
@@ -481,3 +535,4 @@ section .item-active{
     border-radius: 7px;
     text-align: center;
 }
+

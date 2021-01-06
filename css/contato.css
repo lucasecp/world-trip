@@ -18,6 +18,9 @@
 .main-contact p{
     line-height: 25px;
 }
+.main-contact textarea{
+    height: 150px
+}
 .phone-contact{
     display: block;
     width: 150px; 
