@@ -120,6 +120,7 @@ h2,h1{
         position: relative !important;
         transition: .6s ease ;
         transform: none;
+
     }
      .sublist{
         transform: none
@@ -138,16 +139,15 @@ h2,h1{
     .prev , .next{
         font-size: 50px !important;
     }
-    #img3.img{
-        background-position: right top !important
-    }
     #img1.img{
-        background-position: left left !important
+        background: url('../assets/img/banner1m.png');
+    
     }
     #img2.img{
-        background-position: left top !important;
+        background: url('../assets/img/banner2m.png');
+    
     }
-
+   
 }
 @media(max-width: 767px){
     .btn-tab{
@@ -186,7 +186,8 @@ h2,h1{
 .list-item2 > a{
     margin:10px 25px;
     z-index: 99;
-    color: white
+    color: white;
+    padding:10px
 }
 
 
@@ -230,6 +231,7 @@ h2,h1{
 
 
 
+
 .slide{
    position: relative;
 }
@@ -247,30 +249,26 @@ h2,h1{
   height:0;
   width: 0
 }
-.img a{
-    height:100%;
-    width:100%;
-    display: block;
-}
+
 #img1.img{
     background: url('../assets/img/banner1.png');
     background-size: cover;
     background-position: left bottom;
-    background-repeat: no repeat;
+    background-repeat: no-repeat !important
 
 }
 #img2.img{
     background: url('../assets/img/banner2.png');
     background-size: cover;
     background-position: top center ;
-    background-repeat: no repeat;
+    background-repeat: no-repeat !important;
 
 }
 #img3.img{
     background: url('../assets/img/banner3.png');
     background-size: cover;
     background-position: center left;
-    background-repeat: no repeat;
+    background-repeat: no-repeat !important;
 
 }
 

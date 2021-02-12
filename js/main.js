@@ -3,6 +3,7 @@ function getYear(){
 }
 
 $(document).ready(function(){
+    $('.loading').removeClass('loading-active');
 
     $('a[href="#"],a[href=""] ').click(function(e){
       e.preventDefault()
@@ -28,7 +29,7 @@ $(document).ready(function(){
         $('.list-item2:nth-child(2) .sublist').addClass('sublist-active');
 
     })
-    $('.link-dropdown2').on('mouseleave',()=>{
+    
         $('.list-item2:nth-child(2) .sublist').mouseenter(function(){
             if($(this)) $(this).addClass('sublist-active');
         })
@@ -36,10 +37,8 @@ $(document).ready(function(){
             if($(this)) $(this).removeClass('sublist-active');
         })
         $('.list-item2:nth-child(2) .sublist').removeClass('sublist-active');
-    })
+    
 
-
-    $('.link-dropdown').on('mouseleave',()=>{
         $('.sublist').first().mouseenter(function (){
             if($(this)) $(this).addClass('sublist-active');
         })
@@ -47,7 +46,6 @@ $(document).ready(function(){
             if($(this)) $(this).removeClass('sublist-active');
         })
         $('.sublist').first().removeClass('sublist-active');
-    })
 
 
     const mediaDropdown = window.matchMedia("(max-width: 936px)");
@@ -74,7 +72,7 @@ $(document).ready(function(){
         $('.sublist').first().removeClass('sublist-active');
         $('.sublist').first().removeClass('sublist-clicked');
       })
-      $('.loading').removeClass('loading-active');
+
 
 
 
@@ -143,6 +141,10 @@ $(document).ready(function(){
      
   
     }
+
+
+  
+  
 
 })
 
