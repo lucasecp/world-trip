@@ -135,7 +135,18 @@ h2,h1{
     .contact + .contact{
         margin-left:10px !important
     }
-  
+    .prev , .next{
+        font-size: 50px !important;
+    }
+    #img3.img{
+        background-position: right top !important
+    }
+    #img1.img{
+        background-position: left left !important
+    }
+    #img2.img{
+        background-position: left top !important;
+    }
 
 }
 @media(max-width: 767px){
@@ -232,40 +243,61 @@ h2,h1{
 .img{
   position: relative;
   top:0;
-  height:0;
-  width:0;
-  transition: .5s ease ;
   opacity: 0;
- 
+  height:0;
+  width: 0
+}
+.img a{
+    height:100%;
+    width:100%;
+    display: block;
+}
+#img1.img{
+    background: url('../assets/img/banner1.png');
+    background-size: cover;
+    background-position: left bottom;
+    background-repeat: no repeat;
+
+}
+#img2.img{
+    background: url('../assets/img/banner2.png');
+    background-size: cover;
+    background-position: top center ;
+    background-repeat: no repeat;
+
+}
+#img3.img{
+    background: url('../assets/img/banner3.png');
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no repeat;
+
 }
 
 .img-slide-active{
-    height:auto;
-    width: auto;
-    transition: .5s ease ;
+    transition: .5s ease opacity;
     opacity: 1;
+    height: 90vh;
+    width: 100%;
 
    
 
 }
 .prev , .next{
+    background: transparent;
     position : absolute;
     top: 50%;
-    background: rgba(0, 0, 0, 0.5);
     color: white;
-    height: 70px;
-    width:30px;
-    font-size: 50px;
+    font-size: 70px;
     cursor: pointer;
     border: none;
-    margin-left: 20px;
+    outline: none !important;
+    padding: 0 0 0 10px;
     
 }
-.prev:hover , .next:hover{
-   background: rgba(0, 0, 0, 0.8);
-}
+
 .next{
-    margin-right: 20px;
+    padding: 0 10px 0 0;
     right: 0;
 }
 
@@ -282,7 +314,7 @@ h2,h1{
 }
 .controls a.link-slide-active::before{
     background:#ec273b;
-    transition: .3s linear background;
+    transition: .3s linear ;
 }
 .controls a::before{
     content: '';
@@ -292,31 +324,6 @@ h2,h1{
     border: solid white 2px;
     border-radius: 50%;
     padding:5px;
-}
-.progress{
-    position: absolute;
-    bottom: 1px;
-    width:100%;
-    height:2px;
-    animation: progress-out 5s forwards ease;
-}
-.progress-active{
-    background: white;
-    animation: progress 5s forwards ease;
-}
-@keyframes progress{
-    from{
-     left: -100%;
-    }to{
-        left:0
-    }
-}
-@keyframes progress-out{
-    from{
-     left: -100%;
-    }to{
-        left:0
-    }
 }
 div.loading{
     height:100%;

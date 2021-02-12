@@ -3,7 +3,6 @@ function getYear(){
 }
 
 $(document).ready(function(){
-    $('.loading').removeClass('loading-active');
 
     $('a[href="#"],a[href=""] ').click(function(e){
       e.preventDefault()
@@ -17,7 +16,7 @@ $(document).ready(function(){
     $(".year").text(getYear());
 
 
-    $(".hamburguer-menu").click(function(){
+    $(".hamburguer-menu").click(function(){ 
         $('.nav-2').addClass('nav-2-active');
     })
     $(".close-menu").click(function(){
@@ -75,7 +74,7 @@ $(document).ready(function(){
         $('.sublist').first().removeClass('sublist-active');
         $('.sublist').first().removeClass('sublist-clicked');
       })
-
+      $('.loading').removeClass('loading-active');
 
 
 
@@ -145,22 +144,6 @@ $(document).ready(function(){
   
     }
 
-
-  
-  
-       // mudando o banner para mobile
-       const media = window.matchMedia("(max-width: 500px)");
-       function imgMobile(media){
-           const banner1 = document.querySelector('#img1 img');
-           const banner2 = document.querySelector('#img2 img');
-           const banner3 = document.querySelector('#img3 img');
-           if(media.matches && banner1) {
-               banner1.setAttribute('src','assets/img/banner1-mobile.png');
-               banner2.setAttribute('src','assets/img/banner2-mobile.png');
-               banner3.setAttribute('src','assets/img/banner3-mobile.png');
-           }
-       }
-       imgMobile(media)
 })
 
 //tab
