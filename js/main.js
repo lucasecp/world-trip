@@ -8,11 +8,6 @@ $(document).ready(function(){
     $('a[href="#"],a[href=""] ').click(function(e){
       e.preventDefault()
     })
-
-
-    $('.link-dropdown').on('mouseenter',()=>{
-        $('.sublist').first().addClass('sublist-active');
-    })
     // ano atual no footer
     $(".year").text(getYear());
 
@@ -24,37 +19,19 @@ $(document).ready(function(){
         $('.nav-2').removeClass('nav-2-active');
     })
 
-
-    $('.link-dropdown2 ').on('mouseenter',()=>{
-        $('.list-item2:nth-child(2) .sublist').addClass('sublist-active');
-
-    })
-    
-        $('.list-item2:nth-child(2) .sublist').mouseenter(function(){
-            if($(this)) $(this).addClass('sublist-active');
-        })
         $('.list-item2:nth-child(2) .sublist').mouseleave(function(){
             if($(this)) $(this).removeClass('sublist-active');
         })
-        $('.list-item2:nth-child(2) .sublist').removeClass('sublist-active');
     
 
-        $('.sublist').first().mouseenter(function (){
-            if($(this)) $(this).addClass('sublist-active');
-        })
+    
         $('.sublist').first().mouseleave(function (){
             if($(this)) $(this).removeClass('sublist-active');
         })
-        $('.sublist').first().removeClass('sublist-active');
 
-
-    const mediaDropdown = window.matchMedia("(max-width: 936px)");
 
     $('.link-dropdown').on('click', function(e){
-        //se não for mobile {função clique desnecessária}
-      if(!mediaDropdown.matches) return
-
-        if(!$('.sublist').first().hasClass('sublist-clicked')) e.preventDefault()
+        if(!$('.sublist').first().hasClass('sublist-active')) e.preventDefault()
       $('.sublist').first().addClass('sublist-active');
       $('.sublist').first().addClass('sublist-clicked');
       $(".list-item2:nth-child(2) .sublist").removeClass('sublist-active');
@@ -62,10 +39,8 @@ $(document).ready(function(){
      
     })
     $('.link-dropdown2').on('click', function(e){
-      //se não for mobile {função clique desnecessária}
-      if(!mediaDropdown.matches) return
 
-        if(!$('.list-item2:nth-child(2) .sublist').hasClass('sublist-clicked')) e.preventDefault()
+        if(!$('.list-item2:nth-child(2) .sublist').hasClass('sublist-active')) e.preventDefault()
         
         $(".list-item2:nth-child(2) .sublist").addClass('sublist-active');
         $(".list-item2:nth-child(2) .sublist").addClass('sublist-clicked');
